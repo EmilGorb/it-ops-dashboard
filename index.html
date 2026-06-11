@@ -426,7 +426,7 @@ if (!currentKey) {
 throw new Error("Brak klucza API Gemini. Kliknij przycisk 'Klucz API Gemini' w prawym górnym rogu ekranu i wklej swój klucz.");
 }
 
-const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${currentKey}`;
+const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${currentKey}`;
 const payload = {
 contents: [{ parts: [{ text: prompt }] }],
 systemInstruction: { parts: [{ text: sysInstruction }] }
